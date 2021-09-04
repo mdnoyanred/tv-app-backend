@@ -10,61 +10,85 @@ include "header.php"; ?>
 ?>
 
 <?php 
-	if(isset($_POST['api_key'])){
-		if($_POST['api_key'] != $data['api_key']){
-			$query = "update users set api_key='".$conn->real_escape_string($_POST['api_key'])."' where id=".$_SESSION['userid'];
-			if($conn->query($query)){
-				echo "<script>alert('Uusi API-avain tallennettu.');location.reload();</script>";
-			}else {
-				echo "<script>alert('Virhe tallennettaessa.');</script>";
-			}
+if(isset($_POST['api_key'])){
+	if($_POST['api_key'] != $data['api_key']){
+		$query = "update users set api_key='".$conn->real_escape_string($_POST['api_key'])."' where id=".$_SESSION['userid'];
+		if($conn->query($query)){
+			echo "<script>alert('Uusi API-avain tallennettu.');location.reload();</script>";
+		} else {
+			echo "<script>alert('Virhe tallennettaessa.');</script>";
 		}
 	}
+}
 
-	if(isset($_POST['email']) && isset($_POST['newEmail'])){
-		if($_POST['email'] == $data['email']){
+if(isset($_POST['fullName']) && isset($_POST['newFullName'])){
+	if($_POST['fullName'] == $data['full_name']){
 
-			$newEmail = $_POST['newEmail'];
+		$newFullName = $_POST['newFullName'];
 
-			$check = "SELECT * FROM users WHERE email='".$newEmail."'";
-		    $results = $conn->query($check);
+		$check = "SELECT * FROM users WHERE username='".$newFullName."'";
+		$results = $conn->query($check);
 
-		    if($results->num_rows > 0){
-		         echo "<script>alert('Sähköposti on jo olemassa.');</script>";  
-		    }else {
+		if($results->num_rows > 0){
+		    echo "<script>alert('Nimi on jo olemassa.');</script>";  
+		} else {
 
-		        $sql = "update users set email='".$newEmail."'";
-		        if($conn->query($sql) === true){
-		            echo "<script>alert('Sähköposti päivitetty.');</script>" ;
-		        }else {
-		            echo $sql." -> ".$conn->error;
-		      }
+		    $sql = "update users set username='".$newFullName."'";
+		    if($conn->query($sql) === true){
+		        echo "<script>alert('Nimi päivitetty.');</script>" ;
+		    } else {
+		        echo $sql." -> ".$conn->error;
+		    }
 		}
-	}else {
+	} else {
+		echo "<script>alert('Nimeä ei löydy.');</script>" ;
+	}
+}
+
+if(isset($_POST['email']) && isset($_POST['newEmail'])){
+	if($_POST['email'] == $data['email']){
+
+		$newEmail = $_POST['newEmail'];
+
+		$check = "SELECT * FROM users WHERE email='".$newEmail."'";
+		$results = $conn->query($check);
+
+		if($results->num_rows > 0){
+		    echo "<script>alert('Sähköposti on jo olemassa.');</script>";  
+		} else {
+
+		    $sql = "update users set email='".$newEmail."'";
+		    if($conn->query($sql) === true){
+		        echo "<script>alert('Sähköposti päivitetty.');</script>" ;
+		    } else {
+		        echo $sql." -> ".$conn->error;
+		    }
+		}
+	} else {
 		echo "<script>alert('Sähköpostia ei löydy.');</script>" ;
 	}
 }
 
-	if(isset($_POST['username']) && isset($_POST['newUsername'])){
-		if($_POST['username'] == $data['username']){
+if(isset($_POST['username']) && isset($_POST['newUsername'])){
+	if($_POST['username'] == $data['username']){
 
-			$newUsername = $_POST['newUsername'];
+		$newUsername = $_POST['newUsername'];
 
-			$check = "SELECT * FROM users WHERE username='".$newUsername."'";
-		    $results = $conn->query($check);
+		$check = "SELECT * FROM users WHERE username='".$newUsername."'";
+		$results = $conn->query($check);
 
-		    if($results->num_rows > 0){
-		         echo "<script>alert('Käyttäjätunnus on jo olemassa.');</script>";  
-		    }else {
+		if($results->num_rows > 0){
+		    echo "<script>alert('Käyttäjätunnus on jo olemassa.');</script>";  
+		} else {
 
-		        $sql = "update users set username='".$newUsername."'";
-		        if($conn->query($sql) === true){
-		            echo "<script>alert('Käyttäjätunnus päivitetty.');</script>" ;
-		        }else {
-		            echo $sql." -> ".$conn->error;
-		      }
+		    $sql = "update users set username='".$newUsername."'";
+		    if($conn->query($sql) === true){
+		        echo "<script>alert('Käyttäjätunnus päivitetty.');</script>" ;
+		    } else {
+		        echo $sql." -> ".$conn->error;
+		    }
 		}
-	}else {
+	} else {
 		echo "<script>alert('Käyttäjätunnusta ei löydy.');</script>" ;
 	}
 }
@@ -105,6 +129,14 @@ if(isset($_POST['oldPassword']) && isset($_POST['newPassword'])){
         <input class="btn btn-primary" type="submit" name="submit" value="Tallenna">
     </form>
     <br>
+	<form class="settings_form" method="post">
+        <label>Vaihda nimi:</label>
+        <input type="text" name="fullName" placeholder="Vanha nimi" required>
+        <input type="text" name="newFullName" placeholder="Uusi nimi" required>
+        <label></label>
+        <input class="btn btn-primary" type="submit" name="submit" value="Tallenna">
+    </form>
+	<br>
     <form class="settings_form" method="post">
         <label>Vaihda sähköposti:</label>
         <input type="email" name="email" placeholder="Vanha sähköposti" required>
