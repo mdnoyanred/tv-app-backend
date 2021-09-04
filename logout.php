@@ -4,6 +4,6 @@
     unset($_SESSION['password']);
     session_destroy();
     //echo "Successfully Logged out.";
-    header('Location: /cms/');
+    header('Location: /livetv-cms/');
 
 ?>
