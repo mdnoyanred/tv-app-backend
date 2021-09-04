@@ -40,6 +40,7 @@ if(isset($_SESSION['userid'])){
         <br>
         <div>
             <a href="./settings.php">
+                <button class="btn btn-success">Vaihda nimi</button>
                 <button class="btn btn-primary">Vaihda käyttäjätunnus</button>
                 <button class="btn btn-info">Vaihda salasana</button>
                 <button class="btn btn-danger">Vaihda API-avain</button>
