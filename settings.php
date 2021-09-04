@@ -26,14 +26,14 @@ if(isset($_POST['fullName']) && isset($_POST['newFullName'])){
 
 		$newFullName = $_POST['newFullName'];
 
-		$check = "SELECT * FROM users WHERE username='".$newFullName."'";
+		$check = "SELECT * FROM users WHERE full_name='".$newFullName."'";
 		$results = $conn->query($check);
 
 		if($results->num_rows > 0){
 		    echo "<script>alert('Nimi on jo olemassa.');</script>";  
 		} else {
 
-		    $sql = "update users set username='".$newFullName."'";
+		    $sql = "update users set full_name='".$newFullName."'";
 		    if($conn->query($sql) === true){
 		        echo "<script>alert('Nimi päivitetty.');</script>" ;
 		    } else {
