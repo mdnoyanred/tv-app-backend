@@ -52,10 +52,10 @@
 		<div class="add_question_form">
 			<form method="post">
 				<label for="channel_name">Kanavan nimi</label>
-				<input type="text" name="channel_name" value="<?php echo $data['name']; ?>" plceholder="Kanavan nimi" required>
+				<input type="text" name="channel_name" value="<?php echo $data['name']; ?>" placeholder="Kanavan nimi" required>
 
 				<label for="channel_description">Kanavan kuvaus</label>
-				<textarea type="text" name="channel_description" required placeholder="Kanavan kuvaus"> <?php echo $data['description']; ?></textarea>
+				<textarea type="text" name="channel_description" required placeholder="Kanavan kuvaus"><?php echo $data['description']; ?></textarea>
 
 				<label for="live_url">Suora URL-osoite</label>
 				<input type="text" name="live_url" placeholder="Suora URL-osoite" value="<?php echo $data['live_url']; ?>">
@@ -104,7 +104,7 @@
 		<div class="add_question_form">
 			<form method="post">
 				<input type="text" name="channel_name" placeholder="Kanavan nimi" required>
-				<textarea type="text" name="channel_description" required placeholder="Kanavan kuvaus">Kanavan kuvaus</textarea>
+				<textarea type="text" name="channel_description" required placeholder="Kanavan kuvaus"></textarea>
 				<input type="text" name="live_url" placeholder="Suora URL-osoite" required>
 				<input type="text" name="thumbnail" placeholder="Pikkukuva" required>
 				<input type="text" name="facebook" placeholder="Facebook" >
