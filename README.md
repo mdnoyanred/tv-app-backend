@@ -1,5 +1,5 @@
 # About TV App backend 
-This is the custom PHP backend made for Android application.
+This is the custom PHP backend made for [Android application](https://github.com/JTG69YT/tv-app-android).
 
 # Where I got that backend from?
 I got that from Bikash Thapa's Github repo called:
@@ -9,5 +9,3 @@ I got that from Bikash Thapa's Github repo called:
 # Login credentials for testing purposes
 - Username: test
 - Password: test
-
-[Android application](https://github.com/JTG69YT/tv-app-android)
