@@ -25,7 +25,7 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-    <title>Kirjaudu TV App -palvelun hallintapaneeliin</title>
+    <title>TV App - Kirjaudu hallintapaneeliin</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
