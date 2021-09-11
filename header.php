@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>LiveTV - Katso ilmaisia suoria TV-kanavia</title>
+	<title>TV App - Katso ilmaiseksi suoria TV-kanavia</title>
 	
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>

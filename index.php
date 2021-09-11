@@ -25,7 +25,7 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-    <title>Login to LiveTV Dashboard</title>
+    <title>Kirjaudu TV App -palvelun hallintapaneeliin</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
@@ -64,7 +64,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header center">Tervetuloa! Kirjaudu sisään LiveTV:n hallintapaneeliin.</div>
+                    <div class="card-header center">Tervetuloa! Kirjaudu sisään TV App -palvelun hallintapaneeliin.</div>
                     <div class="card-body">
                         <form action="" method="post">
                             <div class="form-group row">
