@@ -57,7 +57,9 @@
 		<header class="site_branding">
 			<div class="brand_wrapper">
 				<div class="brand">
-					<h1 class="site_title">TV App</h1>
+					<a class="site_link" href="./dashboard.php">
+						<h1 class="site_title">TV App</h1>
+					</a>
 				</div>
 			</div>
 		</header>

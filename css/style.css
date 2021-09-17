@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Texturina:wght@800&display=swap');
 
+@font-face {
+  font-family: 'Anteb Extra';
+  src: url('fonts/Anteb-ExtraBold.eot');
+  src: local('Anteb Extra Bold'), local('Anteb-ExtraBold'),
+      url('fonts/Anteb-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Anteb-ExtraBold.woff2') format('woff2'),
+      url('fonts/Anteb-ExtraBold.woff') format('woff'),
+      url('fonts/Anteb-ExtraBold.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
 body {
 	background: #000;
 	font-family: 'Poppins', sans-serif;
@@ -71,15 +83,24 @@ body {
  	align-items: center;
  }
 
- .site_title {
- 	font-family: 'Texturina', serif;
+ .brand a {
+ 	font-family: 'Anteb', sans-serif;
+   text-decoration: none;
+   font-weight: 900;
+   color: white;
  }
  .site_navigation nav a {
  	margin-left: 1rem;
  	font-size: 1.0rem;
- 	font-family: 'Poppins', sans-serif;
+ 	font-family: 'Anteb', sans-serif;
+  font-weight: 800;
  	color: #fff;
 
+ }
+
+ .card-title {
+   font-family: "Anteb", sans-serif;
+   font-weight: 900;
  }
 
 .main_wrapper {

@@ -14,7 +14,7 @@
 			<div class="col">
 				<div class="card" style="width: 16rem;">
 				  <div class="card-body" >
-				    <h5 class="card-title">Kategoriat</h5>
+				    <h3 class="card-title">Kategoriat</h3>
 				    <p class="card-text"><?php echo $total_cat ?></p>
 				    <a href="./categories.php" class="btn btn-primary">Näytä kaikki</a>
 				  </div>
@@ -24,7 +24,7 @@
 			<div class="col">
 				<div class="card" style="width: 16rem;">
 				  <div class="card-body">
-				    <h5 class="card-title">Kanavat</h5>
+				    <h3 class="card-title">Kanavat</h3>
 				    <p class="card-text"><?php echo $total_channel ?></p>
 				    <a href="./channels.php" class="btn btn-primary">Näytä kaikki</a>
 				  </div>
@@ -34,10 +34,19 @@
 			<div class="col">
 				<div class="card" style="width: 16rem;">
 				  <div class="card-body">
-				    <h5 class="card-title">Käyttäjät</h5>
+				    <h3 class="card-title">Käyttäjät</h3>
 				    <p class="card-text"><?php echo $total_users ?></p>
 				    <a href="./user.php" class="btn btn-primary">Näytä tiedot</a>
 				  </div>
+				</div>
+			</div>
+
+			<div class="col">
+				<div class="card" style="width: 16rem;">
+					<div class="card-body">
+					<h3 class="card-title">Kirjaudu ulos</h3>
+				    <a href="./logout.php" class="btn btn-primary">Kirjaudu ulos</a>
+					</div>
 				</div>
 			</div>
 
