@@ -58,7 +58,13 @@
 			<div class="brand_wrapper">
 				<div class="brand">
 					<a class="site_link" href="./dashboard.php">
-						<h1 class="site_title">TV App</h1>
+					<img
+						src="https://jesunmaailma.ml/images/tvapp_logo.png"
+						alt="TV App logo"
+						width="150px"
+						height="90px"
+						style="margin: 1.5em; padding: .4em; border-radius: 10px;"
+					>
 					</a>
 				</div>
 			</div>
