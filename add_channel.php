@@ -7,16 +7,16 @@
 		$conn->set_charset("utf8"); 
 		if(isset($_GET['edit']))
 			$channel_id = $conn->real_escape_string($_GET['edit']);
-		$channel_name = $conn->real_escape_string($_POST['channel_name']);
-		$channel_description = $conn->real_escape_string($_POST['channel_description']);
-		$live_url = $conn->real_escape_string($_POST['live_url']);
-		$thumbnail = $conn->real_escape_string($_POST['thumbnail']);
-		$facebook = $conn->real_escape_string($_POST['facebook']);
-		$twitter = $conn->real_escape_string($_POST['twitter']);
-		$instagram = $conn->real_escape_string($_POST['instagram']);
-		$youtube = $conn->real_escape_string($_POST['youtube']);
-		$website = $conn->real_escape_string($_POST['website']);
-		$category = $conn->real_escape_string($_POST['category']);
+			$channel_name = $conn->real_escape_string($_POST['channel_name']);
+			$channel_description = $conn->real_escape_string($_POST['channel_description']);
+			$live_url = $conn->real_escape_string($_POST['live_url']);
+			$thumbnail = $conn->real_escape_string($_POST['thumbnail']);
+			$facebook = $conn->real_escape_string($_POST['facebook']);
+			$twitter = $conn->real_escape_string($_POST['twitter']);
+			$instagram = $conn->real_escape_string($_POST['instagram']);
+			$youtube = $conn->real_escape_string($_POST['youtube']);
+			$website = $conn->real_escape_string($_POST['website']);
+			$category = $conn->real_escape_string($_POST['category']);
 
 		if(isset($_GET['edit'])){
 			$query = "update channels set name = '".$channel_name."', description = '".$channel_description."', live_url = '".$live_url."', thumbnail = '".$thumbnail."', facebook = '".$facebook."', category='".$category."' , twitter='".$twitter."', instagram='".$instagram."', youtube='".$youtube."', website ='".$website."' where id=".$channel_id."";

@@ -17,31 +17,6 @@
 	<link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.plyr.io/1.8.2/plyr.css">
-
-	<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyAXpJ9mNqUzpO_zZaeFqlevXJ8y6QwbCSw",
-    authDomain: "finnplace-android.firebaseapp.com",
-    databaseURL: "https://finnplace-android.firebaseio.com",
-    projectId: "finnplace-android",
-    storageBucket: "finnplace-android.appspot.com",
-    messagingSenderId: "963601714063",
-    appId: "1:963601714063:web:effacec21214f0810a99fa",
-    measurementId: "G-QJ198ZN1KN"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
 </head>
 <body>
 <?php
@@ -57,13 +32,13 @@
 		<header class="site_branding">
 			<div class="brand_wrapper">
 				<div class="brand">
-					<a class="site_link" href="./dashboard.php">
+					<a href="./dashboard.php">
 					<img
-						src="https://jesunmaailma.ml/images/tvapp_logo.png"
+						src="media/tvapp_logo_web.png"
 						alt="TV App logo"
 						width="150px"
-						height="90px"
-						style="margin: 1.5em; padding: .4em; border-radius: 10px;"
+						height="80px"
+						style="margin: 1.5em;"
 					>
 					</a>
 				</div>

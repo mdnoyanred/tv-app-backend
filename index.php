@@ -31,31 +31,6 @@
     <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-    <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyAXpJ9mNqUzpO_zZaeFqlevXJ8y6QwbCSw",
-    authDomain: "finnplace-android.firebaseapp.com",
-    databaseURL: "https://finnplace-android.firebaseio.com",
-    projectId: "finnplace-android",
-    storageBucket: "finnplace-android.appspot.com",
-    messagingSenderId: "963601714063",
-    appId: "1:963601714063:web:effacec21214f0810a99fa",
-    measurementId: "G-QJ198ZN1KN"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
 </head>
 <body>
 
@@ -64,7 +39,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header center">Tervetuloa! Kirjaudu sisään TV App -palvelun hallintapaneeliin.</div>
+                    <div class="card-header card-header-text center">Tervetuloa! Kirjaudu sisään TV App -palvelun hallintapaneeliin.</div>
                     <div class="card-body">
                         <form action="" method="post">
                             <div class="form-group row">
