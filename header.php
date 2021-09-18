@@ -14,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="media/favicon.png">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.plyr.io/1.8.2/plyr.css">
 </head>
