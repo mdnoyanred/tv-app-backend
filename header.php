@@ -36,8 +36,8 @@
 					<img
 						src="media/tvapp_logo_web.png"
 						alt="TV App logo"
-						width="150px"
-						height="80px"
+						width="240px"
+						height="100px"
 						style="margin: 1.5em;"
 					>
 					</a>
