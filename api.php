@@ -81,6 +81,26 @@
 			}
 		}
 
+		if(isset($_GET['users'])){
+			$query = "select * from users order by id asc";
+			$data = $conn->query($query) or die($conn->error);
+			$datas = array();
+			while($row = $data->fetch_assoc()){
+					$datas[] = $row;
+				}
+
+		  	$show_json = json_encode($datas , JSON_FORCE_OBJECT);
+
+			if ( json_last_error_msg()=="Väärin muotoillut UTF-8-merkit, mahdollisesti väärin koodattu" ) {
+			    $show_json = json_encode($datas, JSON_PARTIAL_OUTPUT_ON_ERROR );
+			}
+			if ( $show_json !== false ) {
+			    echo($show_json);
+			} else {
+			    die("json_encode fail: " . json_last_error_msg());
+			}
+		}
+
 	}else {
 		echo json_encode(array('error' => "Virheellinen avain", ));
 	}

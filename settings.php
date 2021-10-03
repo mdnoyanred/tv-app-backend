@@ -14,28 +14,28 @@ if(isset($_POST['api_key'])){
 	if($_POST['api_key'] != $data['api_key']){
 		$query = "update users set api_key='".$conn->real_escape_string($_POST['api_key'])."' where id=".$_SESSION['userid'];
 		if($conn->query($query)){
-			echo "<script>alert('Uusi API-avain tallennettu.');location.reload();</script>";
+			echo "<script>alert('Uusi API-avain tallennettu.');window.location.href = user.php;</script>";
 		} else {
 			echo "<script>alert('Virhe tallennettaessa.');</script>";
 		}
 	}
 }
 
-if(isset($_POST['fullName']) && isset($_POST['newFullName'])){
-	if($_POST['fullName'] == $data['full_name']){
+if(isset($_POST['name']) && isset($_POST['newName'])){
+	if($_POST['name'] == $data['name']){
 
-		$newFullName = $_POST['newFullName'];
+		$newName = $_POST['newName'];
 
-		$check = "SELECT * FROM users WHERE full_name='".$newFullName."'";
+		$check = "SELECT * FROM users WHERE full_name='".$newName."'";
 		$results = $conn->query($check);
 
 		if($results->num_rows > 0){
 		    echo "<script>alert('Nimi on jo olemassa.');</script>";  
 		} else {
 
-		    $sql = "update users set full_name='".$newFullName."'";
+		    $sql = "update users set name='".$newName."'";
 		    if($conn->query($sql) === true){
-		        echo "<script>alert('Nimi päivitetty.');</script>" ;
+		        echo "<script>alert('Nimi päivitetty.');window.location.href = user.php;</script>" ;
 		    } else {
 		        echo $sql." -> ".$conn->error;
 		    }
@@ -59,7 +59,7 @@ if(isset($_POST['email']) && isset($_POST['newEmail'])){
 
 		    $sql = "update users set email='".$newEmail."'";
 		    if($conn->query($sql) === true){
-		        echo "<script>alert('Sähköposti päivitetty.');</script>" ;
+		        echo "<script>alert('Sähköposti päivitetty.');window.location.href = user.php;</script>" ;
 		    } else {
 		        echo $sql." -> ".$conn->error;
 		    }
@@ -83,7 +83,7 @@ if(isset($_POST['username']) && isset($_POST['newUsername'])){
 
 		    $sql = "update users set username='".$newUsername."'";
 		    if($conn->query($sql) === true){
-		        echo "<script>alert('Käyttäjätunnus päivitetty.');</script>" ;
+		        echo "<script>alert('Käyttäjätunnus päivitetty.');window.location.href = user.php;</script>" ;
 		    } else {
 		        echo $sql." -> ".$conn->error;
 		    }
@@ -105,7 +105,7 @@ if(isset($_POST['oldPassword']) && isset($_POST['newPassword'])){
 
 			$sql = "update users set password='".$newPasswordHash."'";
 			 if($conn->query($sql) === true){
-		            echo "<script>alert('Salasana päivitetty.');</script>" ;
+		            echo "<script>alert('Salasana päivitetty.');location.href = user.php;</script>" ;
 		        }else {
 		            echo $sql." -> ".$conn->error;
 		      }
@@ -131,8 +131,8 @@ if(isset($_POST['oldPassword']) && isset($_POST['newPassword'])){
     <br>
 	<form class="settings_form" method="post">
         <label>Vaihda nimi:</label>
-        <input type="text" name="fullName" placeholder="Vanha nimi" required>
-        <input type="text" name="newFullName" placeholder="Uusi nimi" required>
+        <input type="text" name="name" placeholder="Vanha nimi" required>
+        <input type="text" name="newName" placeholder="Uusi nimi" required>
         <label></label>
         <input class="btn btn-primary" type="submit" name="submit" value="Tallenna">
     </form>

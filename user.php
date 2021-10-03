@@ -20,7 +20,7 @@ if(isset($_SESSION['userid'])){
     <div class="user_profile">
 		<div>
 			<label>Koko nimi:</label>
-			<h5><?php echo $data["full_name"] ?></h5>
+			<h5><?php echo $data["name"] ?></h5>
 		</div>
 		<br>
         <div>
