@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: 'Anteb Extra';
-  src: url('fonts/Anteb-ExtraBold.eot');
+  src: url('../fonts/Anteb-ExtraBold.eot');
   src: local('Anteb Extra Bold'), local('Anteb-ExtraBold'),
-      url('fonts/Anteb-ExtraBold.eot?#iefix') format('embedded-opentype'),
-      url('fonts/Anteb-ExtraBold.woff2') format('woff2'),
-      url('fonts/Anteb-ExtraBold.woff') format('woff'),
-      url('fonts/Anteb-ExtraBold.ttf') format('truetype');
+      url('../fonts/Anteb-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Anteb-ExtraBold.woff2') format('woff2'),
+      url('../fonts/Anteb-ExtraBold.woff') format('woff'),
+      url('../fonts/Anteb-ExtraBold.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }

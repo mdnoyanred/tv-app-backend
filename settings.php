@@ -26,7 +26,7 @@ if(isset($_POST['name']) && isset($_POST['newName'])){
 
 		$newName = $_POST['newName'];
 
-		$check = "SELECT * FROM users WHERE full_name='".$newName."'";
+		$check = "SELECT * FROM users WHERE name='".$newName."'";
 		$results = $conn->query($check);
 
 		if($results->num_rows > 0){

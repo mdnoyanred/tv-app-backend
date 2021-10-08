@@ -25,7 +25,7 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-    <title>TV App - Kirjaudu hallintapaneeliin</title>
+    <title>Teeveet - Kirjaudu hallintapaneeliin</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" href="media/favicon.png">
@@ -39,7 +39,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header card-header-text center">Tervetuloa! Kirjaudu sisään TV App -palvelun hallintapaneeliin.</div>
+                    <div class="card-header card-header-text center">Tervetuloa! Kirjaudu sisään Teeveet-palvelun hallintapaneeliin.</div>
                     <div class="card-body">
                         <form action="" method="post">
                             <div class="form-group row">

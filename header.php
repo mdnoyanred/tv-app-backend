@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>TV App - Hallintapaneeli</title>
+	<title>Teeveet - Hallintapaneeli</title>
 	
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -35,9 +35,9 @@
 					<a href="./dashboard.php">
 					<img
 						src="media/tvapp_logo_web.png"
-						alt="TV App logo"
-						width="240px"
-						height="100px"
+						alt="Teeveet logo"
+						width="202px"
+						height="70px"
 						style="margin: 1.5em;"
 					>
 					</a>
