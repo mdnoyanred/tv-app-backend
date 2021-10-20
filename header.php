@@ -34,10 +34,10 @@
 				<div class="brand">
 					<a href="./dashboard.php">
 					<img
-						src="media/tvapp_logo_web.png"
+						src="media/teeveet_logo.png"
 						alt="Teeveet logo"
-						width="202px"
-						height="70px"
+						width="225px"
+						height="90px"
 						style="margin: 1.5em;"
 					>
 					</a>
