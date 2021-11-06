@@ -1,7 +1,6 @@
 <?php 
 	session_start();
 	header('Content-Type: application/json');
-	include_once ("./common/core.php");
 	require('../../db.php');
 	if(isset($_GET['user_id'])){
 		$q = "select * from users where id=".$_GET["user_id"];
