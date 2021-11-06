@@ -1,6 +1,7 @@
 <?php 
 	session_start();
 	header('Content-Type: application/json');
+	include_once ("./common/core.php");
 	require('../../db.php');
 	if(isset($_GET['user_id'])){
 		$q = "select * from users where id=".$_GET["user_id"];
@@ -14,7 +15,7 @@
 
 
 	if(isset($_GET['api_key']) && $_GET['api_key']==$i['api_key']){
-		require 'db.php';
+		require '../../db.php';
 
 		if(isset($_GET['category'])){
 			// retrieve all the channels present in given category 
