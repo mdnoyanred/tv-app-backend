@@ -11,7 +11,7 @@ if(isset($_SESSION['userid'])){
 <div class="content_main">
     <div class="alert alert-primary">
         <h1>Profiili
-            <a href="./api.php?api_key=<?php echo $data["api_key"] ?>&channels=all&user_id=<?php echo $data["id"] ?>"
+            <a href="./api/v1/api.php?api_key=<?php echo $data["api_key"] ?>&channels=all&user_id=<?php echo $data["id"] ?>"
                 target="_blank" rel="noreferrer noopener" style="float: right; text-decoration: none;">
                 API
             </a>

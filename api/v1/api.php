@@ -1,7 +1,8 @@
 <?php 
 	session_start();
 	header('Content-Type: application/json');
-	require('db.php');
+	include_once ("./common/core.php");
+	require('../../db.php');
 	if(isset($_GET['user_id'])){
 		$q = "select * from users where id=".$_GET["user_id"];
 		$keyData = $conn->query($q) or die($conn->error);
@@ -26,7 +27,7 @@
 					//echo $row['courseId'];
 				}
 
-		  	$show_json = json_encode($datas , JSON_FORCE_OBJECT);
+		  	$show_json = json_encode($datas);
 
 			if ( json_last_error_msg()=="Väärin muotoillut UTF-8-merkit, mahdollisesti väärin koodattu" ) {
 			    $show_json = json_encode($datas, JSON_PARTIAL_OUTPUT_ON_ERROR );
@@ -48,7 +49,7 @@
 					$datas[] = $row;
 				}
 
-		  	$show_json = json_encode($datas , JSON_FORCE_OBJECT);
+		  	$show_json = json_encode($datas);
 
 			if ( json_last_error_msg()=="Väärin muotoillut UTF-8-merkit, mahdollisesti väärin koodattu" ) {
 			    $show_json = json_encode($datas, JSON_PARTIAL_OUTPUT_ON_ERROR );
@@ -69,7 +70,7 @@
 					$datas[] = $row;
 				}
 
-		  	$show_json = json_encode($datas , JSON_FORCE_OBJECT);
+		  	$show_json = json_encode($datas);
 
 			if ( json_last_error_msg()=="Väärin muotoillut UTF-8-merkit, mahdollisesti väärin koodattu" ) {
 			    $show_json = json_encode($datas, JSON_PARTIAL_OUTPUT_ON_ERROR );
