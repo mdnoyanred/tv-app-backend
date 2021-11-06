@@ -13,7 +13,7 @@
 }
 
 body {
-	background: #00042c;
+	background: #00142F;
 	font-family: 'Poppins', sans-serif;
 }
 .fullscreen_bg {
@@ -80,7 +80,7 @@ body {
   }
 
  .site_branding {
-  	background: #00042c;
+    background: #00142F;
   	color: #fff;
  }
  .brand_wrapper {
@@ -111,7 +111,7 @@ body {
  }
 
 .main_wrapper {
-	background: #00042c;
+	background: #00142F;
 }
 
  .site_content{
@@ -124,11 +124,11 @@ body {
   min-height: 100vh;
  	flex:0 1 20%;
  	box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
- 	background: #00042c;
+ 	background: #00142F;
  }
 
  .content_main {
-   background: #00042c;
+   background: #00142F;
  	 flex: 1;
  	 padding: 1rem;
  }
