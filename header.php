@@ -36,8 +36,7 @@
 					<img
 						src="media/teeveet_logo.png"
 						alt="Teeveet logo"
-						width="225px"
-						height="90px"
+						width="256px"
 						style="margin: 1.5em;"
 					>
 					</a>
